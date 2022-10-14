@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: auto; 
+    padding: 1.2rem;  
+}
+.header{
+    width: 100%;
+    height: 80px;
+    padding: 0rem;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 30px gray;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo h1{
+    color: black;
+}
+
+.navbar_nav a{
+    text-decoration: none;
+    word-spacing: 10px;
+    padding-right: 4rem;
+    font-size: 20px;
+    color: black;
+    opacity: 0.5;
+    transition: all.2s;
+}
+.navbar_nav a:hover{
+    color: black;
+    opacity: 1;
+    font-weight: 900;
+    font-family: calibri;
+    font-size: 24px;
+}
+.fa-magnifying-glass{
+    display: none;
+    font-size: 20px;
+    opacity: 0.8;
+    padding-right: 5px;
+}
+.fa-bars{
+    display: none;
+    padding-right: 20px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+.fa-magnifying-glass:hover{
+    color: black;
+    opacity: 1;
+    font-size: 25px;
+}
+.fa-bars:hover{
+    color: black;
+    opacity: 1;
+    font-size: 25px;
+}
+
+/* header end */
+/* BANNER START */
+
+.banner{
+    height: 550px;
+    width: 100%;
+    padding: 3rem;
+    background-image: url(/img/header1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.fath{
+    color: wheat;
+    font-family: algerian;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 9rem;
+}
+.fath_title{
+    color: wheat;
+    font-family: algerian;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* banner end */
+/* START SECTION */
+
+.section{
+    padding: 4.8rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+h1{
+    font-size: 3rem;
+    font-family: algerian;
+}
+.title{
+    margin-top: -3%;
+}
+.section_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 5%;
+    gap: 30px;
+}
+
+.section_img{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    border: 0px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 5px gray;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.section_img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0,0,0,0.3); */
+}
+.section_img img{
+    transition: all 0.5s ease;
+    height: 350px;
+    width: 100%;
+}
+
+/* section end */
+/* BLOG START */
+
+
+.blog{
+    padding: 4.8rem;
+    text-align: center;
+
+}
+h1{
+    font-size: 3rem;
+    font-family: algerian;
+}
+.title{
+    margin-top: -3%;
+}
+.blog_content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 5%;
+    gap: 30px;
+}
+
+.blog_img{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    border: 0px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 5px gray;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.blog_img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0,0,0,0.3); */
+}
+.blog_img img{
+    transition: all 0.5s ease;
+    height: 250px;
+    width: 100%;
+}
+
+button{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    border-radius: 15px;
+    background-color: #050035;
+    color: white;
+}
+button:hover{
+    background-color: black;
+}
+
+.news{
+    color: gray;
+    font-family: calibri;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+}
+
+/* blog end */
+/* NEW START */
+
+
+.new{
+    padding: 1rem;
+    background-color: #1A1A1A;
+
+}
+.titlel{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+
+}
+
+h4{
+    font-size: 1.3rem;
+    padding-left: 5rem;
+    text-transform: uppercase;
+    color: wheat;
+    padding-top: 1rem;
+
+}
+
+h5{
+    color: gray;
+    font-size: 1rem;
+    padding-left: 5rem;
+    padding-top: 6%;
+    opacity: 0.7;
+    font-family: calibri;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+h5:hover{
+    color: wheat;
+    cursor: pointer;
+}
+
+/* <!-- news end       -->
+<!-- FOOTER START --> */
+
+.footer{
+    background-color: #282828;
+}
+.footer_end{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3{
+    color: wheat;
+    opacity: 0.7;
+}
+
+/* <!-- END -->
+<!-- MEDIA SCRIN START --> */
+
+
+@media screen and (max-width:800px) {
+    .navbar_nav a{
+        display: none;
+    }
+    .navbar_nav i{
+        display: block;
+        color: black;
+    }
+    .section_content{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .blog_content{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .titlel{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+   
+    .footer_end{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+
+/* THE END  THE END  THE END  THE END   THE END */
